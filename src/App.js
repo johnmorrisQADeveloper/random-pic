@@ -3,16 +3,18 @@ import { Provider } from 'react-redux'
 import store from './store'
 import Audio from './components/Audio';
 import Image from './components/Image';
+import './App.css'
+
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <Audio/>
-        <Image/>
+        <Audio />
+        <Image />
       </div>
     </Provider>
-  );
+  )
 }
 
 export default App;
