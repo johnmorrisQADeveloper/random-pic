@@ -4,11 +4,10 @@ import { connect } from 'react-redux'
 const Image = ({ imageUrl }) => {
     return (
         <div>
-            <img src={imageUrl}></img>
+            <img alt='image' src={imageUrl}></img>
         </div>
     )
 }
-
 
 const mapStateToProps = (state) => {
     return {
