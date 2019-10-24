@@ -1,11 +1,18 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
-const Timer = () => {
+const Timer = ({timer}) => {
     return (
         <div>
-            Timer
+            {timer && <div>hello</div>}
         </div>
     )
 }
 
-export default Timer
+const mapStateToProps = (state) => {
+    return {
+        timer: state.setTimer.timer
+    }
+}
+
+export default connect(mapStateToProps)(Timer)
