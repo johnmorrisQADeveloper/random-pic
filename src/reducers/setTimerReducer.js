@@ -1,7 +1,8 @@
-import { SET_TIMER, CLEAR_TIMER } from '../actions/types'
+import { SET_TIMER, CLEAR_TIMER, RESET_TIMER } from '../actions/types'
 
 const initialState = {
-  timer: ''
+  timer: '',
+  value: ''
 }
 
 export default (state = initialState, { type, payload }) => {
@@ -16,6 +17,11 @@ export default (state = initialState, { type, payload }) => {
         ...state,
         timer: payload
       }
+      case RESET_TIMER:
+        return {
+          ...state,
+          value: payload
+        }
     default:
       return state
   }

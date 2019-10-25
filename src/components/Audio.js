@@ -8,9 +8,13 @@ let interval
 const Audio = ({ setImageUrl, setTimer, clearTimer }) => {
   const onPlay = () => {
     setTimer()
+    // let timer = 5000 + Math.floor(Math.random() * 500) + 200
+
     interval = setInterval(() => {
+      
       setImageUrl()
-    }, (5000 + Math.floor(Math.random() * 500) + 200))
+  
+    }, (5000))
   }
   const onPause = () => {
     clearTimer()
