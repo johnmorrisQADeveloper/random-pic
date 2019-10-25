@@ -7,7 +7,7 @@ const Timer = ({ timer, value }) => {
     const [totalCounter, setTotalCounter] = useState(60)
 
     useEffect(() => {
-        if (timer !== '' && timer !== false) {
+        if (timer !== '' && timer !== false && value !== null) {
             const imageChangeCounterInterval = setInterval(() => {
                 setImageChangeCounter(imageChangeCounter => imageChangeCounter - 1)
             }, 1000)
@@ -17,7 +17,7 @@ const Timer = ({ timer, value }) => {
                 setImageChangeCounter(5)
             }
         }
-    }, [timer])
+    }, [timer, value])
 
     useEffect(() => {
         if (timer !== '' && timer !== false) {

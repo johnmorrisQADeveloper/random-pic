@@ -22,7 +22,7 @@ const Audio = ({ setImageUrl, setTimer, clearTimer, fetchImages, images }) => {
     }, (5000))
   }
 
-  const onPause = () => {
+  const onStop = () => {
     clearTimer()
     clearInterval(interval)
   }
@@ -30,12 +30,12 @@ const Audio = ({ setImageUrl, setTimer, clearTimer, fetchImages, images }) => {
   return (
     <div>
       { /* 
-        <audio onPause={onPause} onPlay={onPlay} controls id="audio_player">
+        <audio onPause={onStop} onPlay={onPlay} controls id="audio_player">
         <source id="src_mp3" type="audio/mp3" src={src_mp3} />
         </audio>
         */ }
       <button className="ui button" onClick={onPlay}>Start</button>
-      <button className="ui button" onClick={onPause}>Stop</button>
+      <button className="ui button" onClick={onStop}>Stop</button>
 
     </div>
   )
