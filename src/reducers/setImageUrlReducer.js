@@ -1,7 +1,8 @@
-import { SET_IMAGE_URL } from './../actions/types'
+import { SET_IMAGE_URL, FETCH_IMAGES } from './../actions/types'
 
 const initialState = {
-  imageUrl: ''
+  imageUrl: '',
+  images: []
 }
 
 export default (state = initialState, { type, payload }) => {
@@ -9,7 +10,12 @@ export default (state = initialState, { type, payload }) => {
     case SET_IMAGE_URL:
       return {
         ...state,
-        imageUrl: payload
+        imageUrl: state.images.pop().urls.full
+      }
+    case FETCH_IMAGES:
+      return {
+        ...state,
+        images: [...state.images, ...payload]
       }
     default:
       return state
