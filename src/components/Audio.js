@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import src_mp3 from './../data/testSong.mp3'
+// import src_mp3 from './../data/testSong.mp3'
 import { setImageUrl, fetchImages } from '../actions/setImageUrl';
 
 import { connect } from 'react-redux'
@@ -13,7 +13,7 @@ const Audio = ({ setImageUrl, setTimer, clearTimer, fetchImages, images }) => {
 
   useEffect(() => {
     fetchImages()
-  }, [images.length <1])
+  }, [images.length < 1])
   const onPlay = () => {
     setTimer()
     interval = setInterval(() => {
@@ -28,9 +28,11 @@ const Audio = ({ setImageUrl, setTimer, clearTimer, fetchImages, images }) => {
 
   return (
     <div>
-      <audio onPause={onPause} onPlay={onPlay} controls id="audio_player">
+      { /* 
+        <audio onPause={onPause} onPlay={onPlay} controls id="audio_player">
         <source id="src_mp3" type="audio/mp3" src={src_mp3} />
-      </audio>
+        </audio>
+        */ }
       <button onClick={onPlay}>Start</button>
       <button onClick={onPause}>Stop</button>
     </div>
