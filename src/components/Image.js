@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 const Image = ({ imageUrl }) => {
     return (
         <div>
-            <img alt='image' src={imageUrl}></img>
+            <img alt={imageUrl} src={imageUrl}></img>
         </div>
     )
 }
