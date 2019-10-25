@@ -18,7 +18,7 @@ const Audio = ({ setImageUrl, setTimer, clearTimer, fetchImages, images }) => {
     setTimer()
     interval = setInterval(() => {
       setImageUrl()
-    }, (2000))
+    }, (5000))
   }
 
   const onPause = () => {
