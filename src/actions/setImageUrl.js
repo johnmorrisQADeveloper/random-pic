@@ -1,5 +1,5 @@
 import { SET_IMAGE_URL, RESET_TIMER, FETCH_IMAGES } from './types'
-import Unsplash from 'unsplash-js';
+import Unsplash from 'unsplash-js'
 
 const unsplash = new Unsplash({
     accessKey: "94f771a53ece8c7bb46100c7ed9c98bb87cc74c9aeafdcec69fdb47d9104a269",

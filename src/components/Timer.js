@@ -2,27 +2,31 @@ import React, { useEffect, useState } from 'react'
 import { connect } from 'react-redux'
 
 const Timer = ({ timer, value }) => {
-    const [counter, setCounter] = useState(5);
-    const [counter1, setCounter1] = useState(60);
+
+    const [counter, setCounter] = useState(5)
+    const [counter1, setCounter1] = useState(60)
+
     useEffect(() => {
         const interval = setInterval(() => {
-            setCounter(counter => counter - 1);
-        }, 1000);
+            setCounter(counter => counter - 1)
+        }, 1000)
 
         return () => {
-            clearInterval(interval);
+            clearInterval(interval)
             setCounter(5)
-        };
-    }, [value]);
+        }
+    }, [value])
+
     useEffect(() => {
         const interval = setInterval(() => {
-            setCounter1(counter1 => counter1 - 1);
-        }, 1000);
+            setCounter1(counter1 => counter1 - 1)
+        }, 1000)
 
         return () => {
-            clearInterval(interval);
-        };
-    }, [timer, timer !== 60]);
+            clearInterval(interval)
+        }
+    }, [timer, timer !== 60])
+
     return (
         <div>
             <br />
