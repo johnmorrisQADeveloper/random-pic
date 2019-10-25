@@ -33,8 +33,8 @@ const Audio = ({ setImageUrl, setTimer, clearTimer, fetchImages, images }) => {
         <source id="src_mp3" type="audio/mp3" src={src_mp3} />
         </audio>
         */ }
-      <button onClick={onPlay}>Start</button>
-      <button onClick={onPause}>Stop</button>
+      <button className="ui button" onClick={onPlay}>Start</button>
+      <button className="ui button" onClick={onPause}>Stop</button>
     </div>
   )
 }
