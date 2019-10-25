@@ -10,7 +10,7 @@ const unsplash = new Unsplash({
 })
 
 export const setImageUrl = () => {
-    let src = require(`./../data/pics/${Math.floor(Math.random() * 14) + 1}.jpeg`)
+    let src = require(`./../data/pics/${Math.floor(Math.random() * 25) + 1}.jpeg`)
 
     return (dispatch) => {
         // unsplash.photos.getRandomPhoto()
