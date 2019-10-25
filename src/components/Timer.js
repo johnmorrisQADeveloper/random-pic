@@ -22,12 +22,12 @@ const Timer = ({ timer, value }) => {
         return () => {
             clearInterval(interval);
         };
-    }, [timer, timer!==60]);
+    }, [timer, timer !== 60]);
     return (
         <div>
-            <br/>
+            <br />
             {timer && <h3>Image changing in {counter} seconds</h3>}
-            <br/>
+            <br />
             {value && <h3>Total Time remaining {counter1} seconds</h3>}
         </div>
     )

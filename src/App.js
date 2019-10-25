@@ -6,13 +6,16 @@ import Image from './components/Image';
 import './App.css'
 import Timer from './components/Timer';
 
-
 function App() {
   return (
     <Provider store={store}>
-      <div className="App">
-        <Timer/>
-        <Audio />
+      <div className="ui grid">
+        <div className="four wide column">
+          <Timer />
+          <br />
+          <br />
+          <Audio />
+        </div>
         <Image />
       </div>
     </Provider>
