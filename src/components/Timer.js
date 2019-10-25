@@ -35,9 +35,24 @@ const Timer = ({ timer, value }) => {
     return (
         <div>
             <br />
-            {<span>Image changing in {imageChangeCounter} seconds</span>}
-            <br />
-            {<span>Total Time remaining {totalCounter} seconds</span>}
+            <div className="ui statistics">
+                <div className="statistic">
+                    <div className="value">
+                        {imageChangeCounter}
+                    </div>
+                    <div className="label">
+                        Changes in seconds
+                </div>
+                </div>
+                <div className="red statistic">
+                    <div className="value">
+                        {totalCounter}
+                    </div>
+                    <div className="label">
+                        Total time
+                </div>
+                </div>
+            </div>
         </div>
     )
 }

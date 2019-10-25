@@ -10,7 +10,7 @@ function App() {
   return (
     <Provider store={store}>
       <div className="ui grid">
-        <div className="four wide column">
+        <div className="three wide column">
           <Timer />
           <br />
           <br />

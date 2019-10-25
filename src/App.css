@@ -1,4 +1,9 @@
 img {
-    width: 700px;
-    height: 700px;
+  top: 50px;
+  width: 1500px;
+  height: 920px;
+
+}
+.three.wide.column {
+    left: 25px;
 }
