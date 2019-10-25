@@ -9,11 +9,12 @@ let interval
 const Audio = ({ setImageUrl, setTimer, clearTimer, fetchImages, images }) => {
   useEffect(() => {
     fetchImages()
-  }, [])
+  }, [fetchImages])
 
   useEffect(() => {
-    fetchImages()
+      fetchImages()
   }, [images.length < 1])
+
   const onPlay = () => {
     setTimer()
     interval = setInterval(() => {
@@ -35,6 +36,7 @@ const Audio = ({ setImageUrl, setTimer, clearTimer, fetchImages, images }) => {
         */ }
       <button className="ui button" onClick={onPlay}>Start</button>
       <button className="ui button" onClick={onPause}>Stop</button>
+
     </div>
   )
 }

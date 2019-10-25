@@ -3,36 +3,41 @@ import { connect } from 'react-redux'
 
 const Timer = ({ timer, value }) => {
 
-    const [counter, setCounter] = useState(5)
-    const [counter1, setCounter1] = useState(60)
+    const [imageChangeCounter, setImageChangeCounter] = useState(5)
+    const [totalCounter, setTotalCounter] = useState(60)
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            setCounter(counter => counter - 1)
-        }, 1000)
+        if (timer !== '' && timer !== false) {
+            const imageChangeCounterInterval = setInterval(() => {
+                setImageChangeCounter(imageChangeCounter => imageChangeCounter - 1)
+            }, 1000)
 
-        return () => {
-            clearInterval(interval)
-            setCounter(5)
+            return () => {
+                clearInterval(imageChangeCounterInterval)
+                setImageChangeCounter(5)
+            }
         }
-    }, [value])
+    }, [timer])
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            setCounter1(counter1 => counter1 - 1)
-        }, 1000)
+        if (timer !== '' && timer !== false) {
+            const totalCounterInterval = setInterval(() => {
+                setTotalCounter(totalCounter => totalCounter - 1)
+            }, 1000)
 
-        return () => {
-            clearInterval(interval)
+            return () => {
+                clearInterval(totalCounterInterval)
+                setTotalCounter(60)
+            }
         }
-    }, [timer, timer !== 60])
+    }, [timer])
 
     return (
         <div>
             <br />
-            {timer && <span>Image changing in {counter} seconds</span>}
+            {<span>Image changing in {imageChangeCounter} seconds</span>}
             <br />
-            {value && timer && <span>Total Time remaining {counter1} seconds</span>}
+            {<span>Total Time remaining {totalCounter} seconds</span>}
         </div>
     )
 }
