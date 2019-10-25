@@ -28,7 +28,7 @@ const Timer = ({ timer, value }) => {
             <br />
             {timer && <h3>Image changing in {counter} seconds</h3>}
             <br />
-            {value && <h3>Total Time remaining {counter1} seconds</h3>}
+            {value && timer && <h3>Total Time remaining {counter1} seconds</h3>}
         </div>
     )
 }
