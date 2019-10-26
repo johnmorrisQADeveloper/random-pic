@@ -2,7 +2,7 @@ import { SET_IMAGE_URL, RESET_TIMER, FETCH_IMAGES } from './types'
 import Unsplash from 'unsplash-js'
 
 const unsplash = new Unsplash({
-    accessKey: "2b2be799597f560c99494095ae9e6e856c2bf2cae4e653616fb4bcab7329ca14",
+    accessKey: "75cec317e26d0e0d0020bdbe167bf4c033a5b80fa755737745a7088c2c7a56c0",
     headers: {
         "X-Custom-Header": "foo"
     },
@@ -23,8 +23,7 @@ export const setImageUrl = () => {
 
 export const fetchImages = () => {
     return (dispatch) => {
-        unsplash.photos.getRandomPhoto({ count: 30, query: 'bbc' }) // superheros, car, boat, bike, computer, phone, animals, 
-
+        unsplash.photos.getRandomPhoto({ count: 30, query: '' })
             .then(res => res.json())
             .then(json => dispatch({
                 type: FETCH_IMAGES,
