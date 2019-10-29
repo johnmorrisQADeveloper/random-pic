@@ -41,7 +41,7 @@ const Timer = ({ timer, value }) => {
                         {imageChangeCounter}
                     </div>
                     <div className="label">
-                        Changes in seconds
+                        New Image in seconds
                 </div>
                 </div>
                 <div className="red statistic">
