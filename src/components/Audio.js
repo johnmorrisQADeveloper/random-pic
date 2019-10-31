@@ -31,16 +31,16 @@ const Audio = ({ setImageUrl, setTimer, clearTimer, fetchImages, images }) => {
 
   return (
     <div className="ui">
-
-      <audio controls id="audio_player">
-        <source id="src_mp3" type="audio/mp3" src={src_mp3} />
-      </audio>
-      <br/>
-      <br/>
       <br/>
       <button className="massive positive ui button" onClick={onPlay}>Start</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <button className="massive negative ui button" onClick={onStop}>Stop</button>
-
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <audio controls id="audio_player">
+        <source id="src_mp3" type="audio/mp3" src={src_mp3} />
+      </audio>
     </div>
   )
 }

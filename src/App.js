@@ -10,13 +10,19 @@ function App() {
   return (
     <Provider store={store}>
       <div className="ui grid">
-        <div className="three wide column">
-          <Timer />
-          <br />
-          <br />
-          <Audio />
+        <div className="one wide row">
+          <div className="one column row">
+            <Image />
+          </div>
+          <div className="two column row">
+            <Timer />
+            <br />
+            <br />
+            <Audio />
+          </div>
+
         </div>
-        <Image />
+
       </div>
     </Provider>
   )

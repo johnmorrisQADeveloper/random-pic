@@ -1,10 +1,10 @@
 img {
-  
-  top: 50px;
+  left: 25%;
+  top: -10%;
   width: 1500px;
   height: 920px;
 
 }
-.three.wide.column {
-    left: 25px;
+.two.row.column {
+    left: 75%;
 }
