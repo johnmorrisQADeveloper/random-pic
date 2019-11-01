@@ -30,18 +30,18 @@ const Audio = ({ setImageUrl, setTimer, clearTimer, fetchImages, images }) => {
   }
 
   useEffect(() => {
-    // fetchImages()
+    fetchImages()
   }, [fetchImages])
 
   useEffect(() => {
-    // fetchImages()
+    fetchImages()
   }, [images.length < 1])
 
   const onPlay = () => {
     setTimer()
     interval = setInterval(() => {
       setImageUrl()
-    }, (5000))
+    }, (2000))
     // document.getElementById('audio_player').play()
   }
 
@@ -69,13 +69,10 @@ const Audio = ({ setImageUrl, setTimer, clearTimer, fetchImages, images }) => {
         <form onSubmit={onFormSubmit} className="ui form">
           <div className="field">
             <input value={search} className="ui input" onChange={onInputChange} type="text" placeholder="Search music..." />
-            <label>{video}</label>
+            <iframe width="250" height="225" src={`https://www.youtube.com/embed/${video}`} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
           </div>
         </form>
       </div>
-
-
-
     </div>
   )
 }
