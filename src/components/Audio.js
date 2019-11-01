@@ -69,7 +69,8 @@ const Audio = ({ setImageUrl, setTimer, clearTimer, fetchImages, images }) => {
         <form onSubmit={onFormSubmit} className="ui form">
           <div className="field">
             <input value={search} className="ui input" onChange={onInputChange} type="text" placeholder="Search music..." />
-            <iframe width="250" height="225" src={`https://www.youtube.com/embed/${video}`} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+            <br/><br/>
+            <iframe width="250" height="225" src={`https://www.youtube.com/embed/${video}`} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </form>
       </div>
