@@ -14,7 +14,7 @@ const Timer = ({ timer, value }) => {
 
             return () => {
                 clearInterval(imageChangeCounterInterval)
-                setImageChangeCounter(2)
+                setImageChangeCounter(2) 
             }
         }
     }, [timer, value])

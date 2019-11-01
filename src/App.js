@@ -9,8 +9,8 @@ import Timer from './components/Timer'
 function App() {
   return (
     <Provider store={store}>
-      <div className="ui grid">
-        <div className="one wide row">
+      <div className="ui grid segment">
+        <div className="ui grid segment one wide row">
           <div className="one column row">
             <Image />
           </div>
