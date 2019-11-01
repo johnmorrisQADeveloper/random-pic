@@ -6,22 +6,27 @@ import { connect } from 'react-redux'
 import { setTimer, clearTimer } from '../actions/setTimer';
 import youtube from '../apis/youtube'
 let interval
+const KEY = 'AIzaSyCH0aP8d36tsn-wkHfo6T4O01D6273oMcM'
 
 const Audio = ({ setImageUrl, setTimer, clearTimer, fetchImages, images }) => {
   const [search, setSearch] = useState('')
+  const [video, setVideo] = useState('')
 
   const onInputChange = (event) => {
     setSearch(event.target.value)
   }
 
-  const onFormSubmit = (event) => {
+  const onFormSubmit = async (event) => {
     event.preventDefault()
-    youtube.get('/search', {
+    const response = await youtube.get('/search', {
       params: {
         q: search,
-        part: 'snippet'
+        part: 'snippet',
+        maxResults: 1,
+        key: KEY
       }
     })
+    setVideo(response.data.items[0].id. videoId)
   }
 
   useEffect(() => {
@@ -64,7 +69,7 @@ const Audio = ({ setImageUrl, setTimer, clearTimer, fetchImages, images }) => {
         <form onSubmit={onFormSubmit} className="ui form">
           <div className="field">
             <input value={search} className="ui input" onChange={onInputChange} type="text" placeholder="Search music..." />
-
+            <label>{video}</label>
           </div>
         </form>
       </div>
