@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 
 const Timer = ({ timer, value }) => {
 
-    const [imageChangeCounter, setImageChangeCounter] = useState(5)
+    const [imageChangeCounter, setImageChangeCounter] = useState(2)
     const [totalCounter, setTotalCounter] = useState(60)
 
     useEffect(() => {
@@ -14,7 +14,7 @@ const Timer = ({ timer, value }) => {
 
             return () => {
                 clearInterval(imageChangeCounterInterval)
-                setImageChangeCounter(5)
+                setImageChangeCounter(2)
             }
         }
     }, [timer, value])

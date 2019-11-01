@@ -19,7 +19,7 @@ const Audio = ({ setImageUrl, setTimer, clearTimer, fetchImages, images }) => {
     setTimer()
     interval = setInterval(() => {
       setImageUrl()
-    }, (5000))
+    }, (2000))
     document.getElementById('audio_player').play()
   }
 

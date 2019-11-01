@@ -20,9 +20,7 @@ function App() {
             <br />
             <Audio />
           </div>
-
         </div>
-
       </div>
     </Provider>
   )
