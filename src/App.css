@@ -3,8 +3,10 @@ img {
   top: -10%;
   width: 1500px;
   height: 920px;
-
 }
 .two.row.column {
     left: 75%;
+}
+.search-bar{
+  width: 75%;
 }
