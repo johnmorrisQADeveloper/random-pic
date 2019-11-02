@@ -31,7 +31,7 @@ const Audio = ({ setImageUrl, setTimer, clearTimer, fetchImages, images }) => {
 
   useEffect(() => {
     fetchImages()
-  }, [fetchImages])
+  }, [])
 
   useEffect(() => {
     fetchImages()
