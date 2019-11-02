@@ -1,4 +1,8 @@
 # Random Picture 
+
+![Alt text](sampleImage.png?raw=true "Title")
+
+
 This app gets random pictures from unsplash api and renders every 2 seconds.
 
 Images change every 2 seconds
