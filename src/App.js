@@ -1,26 +1,26 @@
 import React from 'react'
 import { Provider } from 'react-redux'
 import store from './store'
-import Audio from './components/Audio'
+import Control from './components/Control'
 import Image from './components/Image'
 import './App.css'
 import Timer from './components/Timer'
+import YoutubeVideos from './components/YoutubeVideos'
 
 function App() {
+  
   return (
     <Provider store={store}>
-      <div className="ui grid segment">
-        <div className="ui grid segment one wide row">
-          <div className="one column row">
-            <Image />
-          </div>
-          <div className="two column row">
-            <Timer />
-            <br />
-            <br />
-            <Audio />
+      <div className='ui'>
+      <br/>
+        <div className="ui three column grid">
+          <div className="row">
+            <div className='column'><Timer /></div>
+            <div className='column'><Control /></div>
+            <div className='column'><YoutubeVideos/></div>
           </div>
         </div>
+        <div className='column'><Image /></div>
       </div>
     </Provider>
   )

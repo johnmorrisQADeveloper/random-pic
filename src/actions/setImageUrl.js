@@ -2,7 +2,7 @@ import { SET_IMAGE_URL, RESET_TIMER, FETCH_IMAGES } from './types'
 import Unsplash from 'unsplash-js'
 
 const unsplash = new Unsplash({
-    accessKey: "53ff6b234e277d880ff6074aa7d302b55d72f368fd23e30ddacc87ff89425df6",
+    accessKey: "6bd6b63db5d78b0059dbd35c051d0b4285e3bf45bf26cf701947fe308aca1c60",
     headers: {
         "X-Custom-Header": "foo"
     },
