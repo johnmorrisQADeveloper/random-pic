@@ -16,3 +16,4 @@ Images change every 2 seconds
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+Note: This app will only work if you have youtubekey and unsplaskkey. 
