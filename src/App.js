@@ -6,18 +6,21 @@ import Image from './components/Image'
 import './App.css'
 import Timer from './components/Timer'
 import YoutubeVideos from './components/YoutubeVideos'
+import Word from './components/Word'
 
 function App() {
-  
+
   return (
+
     <Provider store={store}>
       <div className='ui'>
-      <br/>
-        <div className="ui three column grid">
+        <br />
+        <div className="ui four column grid">
           <div className="row">
             <div className='column'><Timer /></div>
             <div className='column'><Control /></div>
-            <div className='column'><YoutubeVideos/></div>
+            <div className='column'><Word value='sad' label='topic' /> </div>
+            <div className='column'><YoutubeVideos /></div>
           </div>
         </div>
         <div className='column'><Image /></div>
