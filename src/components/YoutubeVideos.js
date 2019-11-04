@@ -4,14 +4,16 @@ import youtube from '../apis/youtube'
 const KEY = 'AIzaSyCH0aP8d36tsn-wkHfo6T4O01D6273oMcM'
 
 const YoutubeVideos = () => {
-  const [video, setVideo] = useState('')
-  const [search, setSearch] = useState('goblin ost')
+  const [video, setVideo] = useState('tap4XLjzsoo')
+  const [search, setSearch] = useState('')
 
   const onInputChange = (event) => {
     setSearch(event.target.value)
   }
 
   const onFormSubmit = async (event) => {
+    console.log(video)
+
     event.preventDefault()
     const response = await youtube.get('/search', {
       params: {
