@@ -31,7 +31,7 @@ const YoutubeVideos = () => {
             <div className='column'>
               <input value={search} className="ui input" onChange={onInputChange} type="text" placeholder="Search music..." />
             </div>
-            <iframe title={video} className='column massive' width="100" height="50" src={`https://www.youtube.com/embed/${video}`} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe title={video} className='massive' width="100" height="65" src={`https://www.youtube.com/embed/${video}`} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </div>
       </form>

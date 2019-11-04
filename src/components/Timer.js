@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { connect } from 'react-redux'
+import Word from './Word'
 
 const Timer = ({ timer, value }) => {
 
@@ -34,16 +35,7 @@ const Timer = ({ timer, value }) => {
 
     return (
         <div className=''>
-            <div className="ui statistics">
-                <div className="statistic">
-                    <div className="value">{imageChangeCounter}</div>
-                    <div className="label">New Image</div>
-                </div>
-                <div className="red statistic">
-                    <div className="value">{totalCounter}</div>
-                    <div className="label">Total time</div>
-                </div>
-            </div>
+            <Word value={totalCounter} label='Total time'/>
         </div>
     )
 }
