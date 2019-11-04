@@ -7,7 +7,7 @@ import './App.css'
 import Timer from './components/Timer'
 import YoutubeVideos from './components/YoutubeVideos'
 import Word from './components/Word'
-
+import word from './data/topic.json'
 function App() {
 
   return (
@@ -19,7 +19,7 @@ function App() {
           <div className="row">
             <div className='column'><Timer /></div>
             <div className='column'><Control /></div>
-            <div className='column'><Word value='sad' label='topic' /> </div>
+            <div className='column'><Word value={word.topic[Math.floor(Math.random() * 10) + 1]} label='topic' /> </div>
             <div className='column'><YoutubeVideos /></div>
           </div>
         </div>
