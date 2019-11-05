@@ -8,8 +8,7 @@ import Timer from './components/Timer'
 import YoutubeVideos from './components/YoutubeVideos'
 import Word from './components/Word'
 import word from './data/topic.json'
-function App() {
-
+function App () {
   return (
 
     <Provider store={store}>
