@@ -65,7 +65,8 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "deploy": "aws s3 sync build/ s3://fun-game-karoke --acl public-read"
+    "deploy": "aws s3 sync build/ s3://fun-game-karoke --acl public-read",
+    "lint": "./node_modules/.bin/eslint src/*/*.js src/*.js"
   },
   "eslintConfig": {
     "extends": "react-app"
