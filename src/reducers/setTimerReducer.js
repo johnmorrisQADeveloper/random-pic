@@ -17,11 +17,11 @@ export default (state = initialState, { type, payload }) => {
         ...state,
         timer: payload
       }
-      case RESET_TIMER:
-        return {
-          ...state,
-          value: payload
-        }
+    case RESET_TIMER:
+      return {
+        ...state,
+        value: payload
+      }
     default:
       return state
   }

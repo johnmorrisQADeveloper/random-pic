@@ -27,16 +27,16 @@ const YoutubeVideos = () => {
   }
 
   return (
-      <form onSubmit={onFormSubmit} className="ui form massive">
-        <div className="ui two column grid">
-          <div className="row">
-            <div className='column'>
-              <input value={search} className="ui input" onChange={onInputChange} type="text" placeholder="Search music..." />
-            </div>
-            <iframe title={video} className='massive' width="100" height="65" src={`https://www.youtube.com/embed/${video}`} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+    <form onSubmit={onFormSubmit} className="ui form massive">
+      <div className="ui two column grid">
+        <div className="row">
+          <div className='column'>
+            <input value={search} className="ui input" onChange={onInputChange} type="text" placeholder="Search music..." />
           </div>
+          <iframe title={video} className='massive' width="100" height="65" src={`https://www.youtube.com/embed/${video}`} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
-      </form>
+      </div>
+    </form>
   )
 }
 

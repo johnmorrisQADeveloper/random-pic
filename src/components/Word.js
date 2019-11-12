@@ -1,6 +1,6 @@
 import React from 'react'
-
-const Word = ({value, label}) => {
+/* eslint react/prop-types: 0 */
+const Word = ({ value, label }) => {
   return (
     <div>
       <div className="ui statistics">
