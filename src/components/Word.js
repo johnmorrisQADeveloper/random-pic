@@ -5,7 +5,7 @@ const Word = ({ value, label }) => {
     <div>
       <div className="ui statistics">
         <div className="red statistic">
-          <div className="value">{value}</div>
+          <div id="counter" className="value">{value}</div>
           <div className="label">{label}</div>
         </div>
       </div>

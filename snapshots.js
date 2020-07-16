@@ -1,13 +1,9 @@
 module.exports = {
   "Actions": {
     "testing": {
-      "1": "<div class=\"value\">60</div>",
-      "2": {
-        "foo": 42
-      },
-      "3": "<div class=\"value\">56</div>",
-      "4": "<div class=\"value\">56</div>",
-      "5": "<div class=\"value\">56</div>"
+      "1": "<div id=\"counter\"\n  class=\"value\">60</div>",
+      "2": "<div id=\"counter\"\n  class=\"value\">56</div>",
+      "3": "<div id=\"counter\"\n  class=\"value\">60</div>"
     }
   },
   "__version": "4.10.0"
