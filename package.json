@@ -16,6 +16,7 @@
     "camelcase": "^5.2.0",
     "case-sensitive-paths-webpack-plugin": "2.2.0",
     "css-loader": "2.1.1",
+    "cypress-plugin-snapshots": "^1.4.3",
     "dotenv": "6.2.0",
     "dotenv-expand": "5.1.0",
     "eslint-config-react-app": "^5.0.2",
@@ -137,6 +138,8 @@
     ]
   },
   "devDependencies": {
+    "@cypress/snapshot": "^2.1.7",
+    "cypress": "^4.10.0",
     "eslint": "^6.6.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.18.2",

@@ -10,7 +10,6 @@ import Word from './components/Word'
 import word from './data/topic.json'
 function App () {
   return (
-
     <Provider store={store}>
       <div className='ui'>
         <br />
